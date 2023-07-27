@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name=”apple-mobile-web-app-capable” content=”yes “>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" type="image/x-icon" href="../static/images/icons8-türklingel-16.ico">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/eye.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../static/style.css">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet"> 
+        <title>{% block title %}Home{% endblock %}</title>
+    </head>
+    <body>
+        <div class="background"></div>
+        <div class="overlay"></div>
+        <div class="enterPin" id="enterPin" ontouchstart="fadeout(this);" onclick="fadeout(this);">
+            <div class="floatation" onclick="event.stopPropagation();" ontouchstart="event.stopPropagation();">
+                <div class="pinForm" name="pinForm">
+                    <h1>SPIEL STARTEN</h1>
+                    <div class="form-group">
+                        <label for="pin" class="formElement">PIN</label>
+                        <input type="password" class="form-control" id="mainPin" name="mainPin" placeholder="Pin eingeben" pattern="[0-9]{7}" maxlength="7" onblur="checkPin(1);"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navBar">
+        </nav>
+        {% block content %}
+        {% endblock %}
+        <nav class="navBot">
+            <a href="https://github.com/ycidev" class="link">© 2023 ycidev</a>
+        </nav>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="text/javascript"
+            src="{{ url_for('static', filename='index.js') }}"
+        ></script>
+    </body>
+</html>

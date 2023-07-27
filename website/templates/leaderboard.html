@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %}Glockenquiz{% endblock %}
+{% block content %}
+<div class="grid">
+    <h1 style="font-size: 4rem;">BESTENLISTE</h1>
+    {% if leaderLen > 0 %}
+    <table class="table">
+        <tr class="heading">
+            <th>NAME</th>
+            <th>PUNKTZAHL</th>
+        </tr>
+        {% for i in leader %}
+        <tr>
+            <td>{{ i[0] }}</td>
+            <td>{{ i[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+    <a class="button lg" href="/">NEUSTART</a>
+</div>
+{% if entry %}
+<div class="backdrop" id="backdrop">
+    <div class="text" onclick="fadeout(text); fadein(nameForm);" ontouchstart="fadeout(text); fadein(nameForm);" id="text">
+        <h1 class="md">{{ rounds }}/5</h1>
+        {% if rounds >= 3 %}
+        <h1 class="lg">GEWONNEN!</h1>
+        {% else %}
+        <h1 class="lg">VERLOREN!</h1>
+        {% endif %}
+        <h1 class="sm">{{ points }} Punkte</h1>
+    </div>
+    <div class="floatation" id="nameForm">
+        <div class="Form">
+            <h1>NAME EINGEBEN</h1>
+            <form class="form-group" method="POST" action="/leaderboard">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name eingeben"/>
+                <button type="submit">FERTIG</button>
+                <button type="button" onclick="fadeout(nameForm); fadein(text);" style="margin-left: 0.8rem;">ZURÜCK</button>
+            </form>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

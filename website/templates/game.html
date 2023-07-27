@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block title %}Glockenquiz{% endblock %}
+{% block content %}
+<div class="backdrop" id="backdrop">
+    <h1 class="xl">RUNDE {{ index }}</h1>
+    <button class="button" onclick="startGame();">BEREIT?</button>
+</div>
+<audio src="../static/audio/countdown.wav" id="queue"></audio>
+<audio src={{ audio }} id="player"></audio>
+<div class="countdown" id="countdown">3</div>
+<div class="gameBox" id="box">
+    <h1 id="start">START</h1>
+    <progress id="seekbar" value="0" max="1" class="progressBar"></progress>
+</div>
+<form class="itemCanvas" method="POST" id="game" onsubmit="return false;">
+    <input type="hidden" name="timer" id="timer">
+    <button type="submit" class="item" value="0" name="submitButton">
+        <img src={{ imgs[0] }} class="img">
+        {{ locations[0] }}
+        <img src={{ flags[0] }} class="flag">
+    </button>
+    <button type="submit" class="item" value="1" name="submitButton">
+        <img src={{ imgs[1] }} class="img">
+        {{ locations[1] }}
+        <img src={{ flags[1] }} class="flag">
+    </button>
+    <button type="submit" class="item" value="2" name="submitButton">
+        <img src={{ imgs[2] }} class="img">
+        {{ locations[2] }}
+        <img src={{ flags[2] }} class="flag">
+    </button>
+    <button type="submit" class="item" value="3" name="submitButton">
+        <img src={{ imgs[3] }} class="img">
+        {{ locations[3] }}
+        <img src={{ flags[3] }} class="flag">
+    </button>
+</form> 
+<h1 class="round" id="round">{{ index }}/5</h1>
+{% endblock %}
