@@ -1,0 +1,482 @@
+* {
+    font-family: 'Hammersmith One', sans-serif;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+html {
+    overscroll-behavior: none;
+}
+
+.button {
+    padding: 0.4rem 0.6rem;
+    background-color: transparent;
+    color: #42f5bc;
+    border: 3px solid #42f5bc;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.button.lg {
+    padding: 0.4rem 0.8rem;
+    background-color: transparent;
+    color: #42f5bc;
+    border: 3px solid #42f5bc;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.password {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.eye {
+    content: "";
+    display: flex;
+    background-color: #42f5bc;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.eye:hover {
+    background-color: #ff8c00;
+}
+
+.loginForm {
+    display: flex; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    flex-direction: column; 
+    align-items: flex-start; 
+    align-content: center; 
+    justify-content: center; 
+    width: 50vw; 
+    height: 80vh;
+}
+
+.loginForm button {
+    padding: 0.4rem 0.6rem;
+    background-color: transparent;
+    color: #42f5bc;
+    border: 3px solid #42f5bc;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.formElement {
+    color: #42f5bc;
+    user-select: none;
+}
+
+.loginForm button:hover {
+    text-decoration: none;
+    border-color: #ff8c00;
+    color: #ff8c00;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 12px;
+}
+
+.link:hover {
+    color: #42f5bc;
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: none;
+    border-color: #ff8c00;
+    color: #ff8c00;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0px 0px 20px 5px #42f5bc inset;
+}
+
+.navBot {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navBot .link {
+    margin-right: 2rem;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/Hintergrund.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3) blur(5px);
+
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+}
+
+h1 {
+    color: #42f5bc;
+    user-select: none;
+}
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: brightness(70%) blur(20px);
+    -webkit-backdrop-filter: brightness(70%) blur(20px);
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.backdrop .text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.backdrop h1.xl {
+    font-weight: 900;
+    font-size: 7rem;
+}
+
+.backdrop .text h1.sm {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.backdrop .text h1.md {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.backdrop .text h1.lg {
+    font-weight: 900;
+    font-size: 6rem;
+}
+
+.backdrop .button {
+    padding: 0.4rem 0.8rem;
+    background-color: transparent;
+    color: #42f5bc;
+    border: 3px solid #42f5bc;
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.backdrop .floatation .Form button {
+    padding: 0.4rem 0.6rem;
+    background-color: transparent;
+    color: #42f5bc;
+    border: 3px solid #42f5bc;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-top: 1.3rem;
+}
+
+.backdrop .floatation .Form button:hover {
+    text-decoration: none;
+    border-color: #ff8c00;
+    color: #ff8c00;
+}
+
+.backdrop .button:hover {
+    text-decoration: none;
+    border-color: #ff8c00;
+    color: #ff8c00;
+}
+
+.backdrop .floatation {
+    width: 20rem;
+    height: 20rem;
+    background-color: transparent;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 20px 5px #42f5bc, 0px 0px 20px 5px #42f5bc inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center; 
+    visibility: hidden;   
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.backdrop .floatation .Form {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+}
+
+.enterPin {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: brightness(70%) blur(20px);
+    -webkit-backdrop-filter: brightness(70%) blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.enterPin .floatation {
+    width: 20rem;
+    height: 20rem;
+    background-color: transparent;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 20px 5px #42f5bc, 0px 0px 20px 5px #42f5bc inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.enterPin .floatation .pinForm {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+}
+
+.itemCanvas {
+    display: flex; 
+    height: 29rem;
+    width: 29rem;
+    position: absolute; 
+    left: 50%; 
+    top: 60%;
+    transform: translate(-50%, -50%); 
+    align-items: center; 
+    align-content: center; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 5rem;
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.itemCanvas button {
+    width: 12rem;
+    height: 12rem;
+    background-color: transparent;
+    color: #42f5bc;
+    border: 3px solid #42f5bc;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.itemCanvas button .img {
+    margin: 0.5rem; 
+    width: 8rem; 
+    height: 8rem;
+    border-radius: 0.3rem 0.3rem;
+    object-fit: cover;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.itemCanvas button:hover .img {
+    width: 8.2rem;
+    height: 8.2rem;
+}
+
+.itemCanvas button .flag {
+    height: 1.4rem;
+    margin-bottom: 0.2rem;
+}
+
+.itemCanvas button:hover {
+    text-decoration: none;
+    border-color: #ff8c00;
+    color: #ff8c00;
+}
+
+.gameBox {
+    height: 15rem;
+    display: flex;
+    position: absolute;
+    top: 12.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.gameBox h1 {
+    color: #42f5bc;
+    font-weight: 900;
+    font-size: 4rem;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.countdown {
+    position: absolute;
+    top: 12.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: #42f5bc;
+    font-weight: 900;
+    font-size: 8rem;
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.progressBar {
+    -webkit-appearance: none;
+    appearance: inherit;
+    width: 35rem;
+    background-color: transparent;
+    border: 3px solid #42f5bc;
+    height: 2.5rem;
+    border-radius: 0.6rem;
+    color: #42f5bc;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.progressBar::-moz-progress-bar {
+    background: #42f5bc;
+}
+
+.progressBar::-webkit-progress-bar {
+    background: transparent;
+}
+
+.progressBar::-webkit-progress-value {
+    background: #42f5bc;
+}
+
+.round {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    transform: translate(50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.grid table {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.grid table .heading {
+    font-weight: 900;
+    font-size: 1.7rem;
+    border-top: hidden;
+    color: #42f5bc;
+}
+
+td:first-child {
+    border-right: solid 2px #42f5bc;
+  }
+
+th:first-child {
+    border-right: solid 2px #42f5bc;
+  }
+
+tr {
+    border-bottom: solid 2px#42f5bc;
+}
+
+tr:last-child {
+    border-bottom: hidden;
+}
+
+.grid {
+    position: absolute;
+    left: 50%;
+    top: 8rem;
+    transform: translate(-50%, 0);
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}

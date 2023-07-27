@@ -1,0 +1,80 @@
+[
+    {
+        "location": "Appenzell",
+        "flag": "../static/images/Flags/switzerland.png",
+        "img": "../static/images/Kirchen/Appenzell.jpg",
+        "audio": "../static/audio/Appenzell.wav"
+    },
+    {
+        "location": "Echternach",
+        "flag": "../static/images/Flags/luxembourg.png",
+        "img": "../static/images/Kirchen/Echternach.jpg",
+        "audio": "../static/audio/Echternach.wav"
+    },
+    {
+        "location": "Freiburg",
+        "flag": "../static/images/Flags/germany.png",
+        "img": "../static/images/Kirchen/Freiburg.jpg",
+        "audio": "../static/audio/Freiburg.wav"
+    },
+    {
+        "location": "Köln",
+        "flag": "../static/images/Flags/germany.png",
+        "img": "../static/images/Kirchen/Koln.jpg",
+        "audio": "../static/audio/Koln.wav"
+    },
+    {
+        "location": "Limburg",
+        "flag": "../static/images/Flags/germany.png",
+        "img": "../static/images/Kirchen/Limburg.jpg",
+        "audio": "../static/audio/Limburg.wav"
+    },
+    {
+        "location": "Maria Laach",
+        "flag": "../static/images/Flags/germany.png",
+        "img": "../static/images/Kirchen/Maria_Laach.jpg",
+        "audio": "../static/audio/Maria_Laach.wav"
+    },
+    {
+        "location": "Saarlouis Roden",
+        "flag": "../static/images/Flags/germany.png",
+        "img": "../static/images/Kirchen/Saarlouis_Roden.jpg",
+        "audio": "../static/audio/Saarlouis_Roden.wav"
+    },
+    {
+        "location": "Salzburg",
+        "flag": "../static/images/Flags/austria.png",
+        "img": "../static/images/Kirchen/Salzburg.jpg",
+        "audio": "../static/audio/Salzburg.wav"
+    },
+    {
+        "location": "Scheyern",
+        "flag": "../static/images/Flags/germany.png",
+        "img": "../static/images/Kirchen/Scheyern.jpg",
+        "audio": "../static/audio/Scheyern.wav"
+    },
+    {
+        "location": "Speyer",
+        "flag": "../static/images/Flags/germany.png",
+        "img": "../static/images/Kirchen/Speyer.jpg",
+        "audio": "../static/audio/Speyer.wav"
+    },
+    {
+        "location": "Straßburg",
+        "flag": "../static/images/Flags/france.png",
+        "img": "../static/images/Kirchen/Strassburg.jpg",
+        "audio": "../static/audio/Strassburg.wav"
+    },
+    {
+        "location": "Trier",
+        "flag": "../static/images/Flags/germany.png",
+        "img": "../static/images/Kirchen/Trier.jpg",
+        "audio": "../static/audio/Trier.wav"
+    },
+    {
+        "location": "Wien",
+        "flag": "../static/images/Flags/austria.png",
+        "img": "../static/images/Kirchen/Wien.jpg",
+        "audio": "../static/audio/Wien.wav"
+    }
+]
