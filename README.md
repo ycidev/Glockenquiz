@@ -18,7 +18,6 @@ To run the game in your local development environment you need to install some P
 To run the application run the main.py file from either the command line (type ```python3 main.py``` in the project directory) or an IDE of your choice. Flask will start a local development server which you can access from your Browser at http://127.0.0.1:5000/.  
 ### Have fun!  
 </br>
-</br>
 <h2 align="center">Images</h2>
 <p align="center">
   <img src="https://github.com/ycidev/Glockenquiz/blob/main/landingPage.png?raw=true" alt="landing page" width="300px"/>
