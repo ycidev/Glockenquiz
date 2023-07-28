@@ -20,7 +20,7 @@ To run the application run the main.py file from either the command line (type `
 </br>
 <h2 align="center">Images</h2>
 <p align="center">
-  <img src="https://github.com/ycidev/Glockenquiz/blob/main/landingPage.png?raw=true" alt="landing page" width="300px"/>
-  <img src="https://github.com/ycidev/Glockenquiz/blob/main/game.png?raw=true" alt="game" width="300px"/>
-  <img src="https://github.com/ycidev/Glockenquiz/blob/main/leaderboard.png?raw=true" alt="leaderboard" width="300px"/>
+  <img src="https://github.com/ycidev/Glockenquiz/blob/main/landingPage.png?raw=true" alt="landing page" width="200px"/>
+  <img src="https://github.com/ycidev/Glockenquiz/blob/main/game.png?raw=true" alt="game" width="200px"/>
+  <img src="https://github.com/ycidev/Glockenquiz/blob/main/leaderboard.png?raw=true" alt="leaderboard" width="200px"/>
 </p>
