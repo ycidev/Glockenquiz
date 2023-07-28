@@ -15,10 +15,13 @@ The whole project is mostly written in German since it was a project for my scho
 ## Installation:
 First of all download the code from this github page and extract the zip to your local drive.
 To run the game in your local development environment you need to install some Python packages. To do this simply navigate to the project folder on your system using the command line. From there type ```pip3 install -r requirements.txt``` after the installation finished you are good to go.
-To run the application run the main.py file from either the command line (type ```python3 main.py``` in the project directory) or an IDE of your choice. Flask will start a local development server which you can access from your Browser at http://127.0.0.1:5000/. 
-
-### Have fun!
-
-![landing page](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)  
-![game](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)  
-![leaderboard](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)  
+To run the application run the main.py file from either the command line (type ```python3 main.py``` in the project directory) or an IDE of your choice. Flask will start a local development server which you can access from your Browser at http://127.0.0.1:5000/.  
+### Have fun!  
+</br>
+</br>
+<h2 align="center">Images</h2>
+<p align="center">
+  <img src="https://github.com/ycidev/Glockenquiz/blob/main/landingPage.png?raw=true" alt="landing page" width="300px"/>
+  <img src="https://github.com/ycidev/Glockenquiz/blob/main/game.png?raw=true" alt="game" width="300px"/>
+  <img src="https://github.com/ycidev/Glockenquiz/blob/main/leaderboard.png?raw=true" alt="leaderboard" width="300px"/>
+</p>
